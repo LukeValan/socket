@@ -2,7 +2,7 @@ let socket
 
 function setup() {
   createCanvas(400, 400);
-  socket = io.connect('localhost:3000')
+  socket = io.connect('lukesocket.onrender.com:3000')
   socket.on('mouse', newDrawing)
 }
 
